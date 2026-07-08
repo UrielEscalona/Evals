@@ -1,0 +1,42 @@
+# Entornos virtuales y dependencias
+.venv/
+env/
+venv/
+ENV/
+bin/
+lib/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Cachés de Python y compilación
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Configuración local sensible
+.env
+
+# Logs
+*.log
+
+# Caché de pruebas
+.pytest_cache/
+.coverage
+htmlcov/
+.nosetests
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/

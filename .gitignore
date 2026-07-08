@@ -1,46 +1,13 @@
-# Entornos virtuales y dependencias
-.venv/
-env/
-venv/
-ENV/
-bin/
-lib/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-parts/
-sdist/
-var/
-wheels/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
+# Proyectos en desarrollo (se subirán cuando estén listos)
+Proyecto_02/
+Proyecto_03/
 
-# Cachés de Python y compilación
+# Archivos de entorno y temporales
+.env
+.venv/
+venv/
+env/
 __pycache__/
 *.py[cod]
-*$py.class
-
-# Configuración local sensible
-.env
-
-# Logs del agente
-*.log
-agent.log
-
-# Caché de pruebas
 .pytest_cache/
-.coverage
-htmlcov/
-.nosetests
-nosetests.xml
-coverage.xml
-*.cover
-.hypothesis/
-
-# Datos de prueba autogenerados (se crean al correr main.py o los tests)
-data/
+*.log
