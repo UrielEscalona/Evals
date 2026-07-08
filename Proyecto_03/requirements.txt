@@ -1,0 +1,9 @@
+deepeval
+google-generativeai
+google-genai
+python-dotenv
+streamlit
+chromadb
+langchain-core
+langchain-community
+langchain-text-splitters

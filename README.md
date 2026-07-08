@@ -19,13 +19,18 @@ Este repositorio contiene una colección de proyectos prácticos de Inteligencia
 * **Características**: Anonimización local en tiempo real (Privacy by Design), base vectorial RAG cifrada localmente (AES-256-GCM), soporte de Derechos ARCO (Derecho al Olvido), razonamiento CoT, interfaz interactiva en Streamlit y evaluaciones (Red Teaming, Bias y Grounding).
 * **Carpeta**: [Proyecto_02/](file:///Proyecto_02)
 
+### 4. [Proyecto 03: DeepEval RAG Academy](file:///Proyecto_03/README.md)
+* **Descripción**: Guía e instructivo interactivo en Streamlit y Python diseñado para aprender y evaluar sistemas RAG empresariales usando el framework **DeepEval** y Gemini como "LLM Judge".
+* **Características**: Simulador interactivo de alucinaciones y desviaciones RAG, evaluación de métricas principales (Faithfulness, Answer Relevancy, Contextual Relevancy), sintetizador de datos de prueba (Goldens) exportable a CSV y Cheat Sheet de pytest integrada.
+* **Carpeta**: [Proyecto_03/](file:///Proyecto_03)
+
 ---
 
 ## 🛠️ Requisitos Generales
 
 - **Python 3.8+** (recomendado 3.10+)
 - **Ollama** ejecutándose localmente ([ollama.com](https://ollama.com))
-- **Clave de API de Gemini** (para Proyecto_02)
+- **Clave de API de Gemini** (para Proyecto_02 y Proyecto_03)
 - Modelos locales/remotos requeridos:
   - `qwen3-vl:4b` (o equivalente multimodal como `qwen2.5-vl:3b`)
   - `gemma4:latest` (o modelo similar)

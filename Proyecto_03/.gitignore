@@ -1,0 +1,21 @@
+# Entornos virtuales y configuraciones locales
+.env
+.venv/
+env/
+venv/
+ENV/
+
+# Python cache y compilados
+__pycache__/
+*.py[cod]
+*$py.class
+
+# DeepEval y Pytest caches
+.deepeval/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Archivos del sistema u OS
+.DS_Store
+Thumbs.db
