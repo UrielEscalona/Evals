@@ -1,0 +1,14 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pytest cache
+.pytest_cache/
+
+# Environment variables
+.env
+
+# Local logs and database files
+data/human_escalations.log
+data/vector_store.enc

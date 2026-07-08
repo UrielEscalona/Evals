@@ -1,0 +1,14 @@
+[LEY GENERAL DE PROTECCIÓN DE DATOS PERSONALES EN POSESIÓN DE SUJETOS OBLIGADOS (LGPDPPSO) - MÉXICO]
+
+ARTÍCULO 3 - SUJETOS OBLIGADOS Y DEFINICIONES
+- Sujetos Obligados: Cualquier autoridad, entidad, órgano y organismo de los Poderes Ejecutivo, Legislativo y Judicial, órganos autónomos, partidos políticos, fideicomisos y fondos públicos, en el ámbito federal, estatal y municipal.
+- Datos Personales Sensibles (Fracción X): Aquellos que se refieran a la esfera más íntima de su titular, o cuyo uso indebido pueda dar origen a discriminación o conlleve un riesgo grave para éste. Se consideran sensibles, de manera enunciativa más no limitativa, los datos que puedan revelar aspectos como origen racial o étnico, estado de salud presente o futuro, información genética, creencias religiosas, filosóficas y morales, afiliación sindical, opiniones políticas o preferencia sexual.
+
+ARTÍCULO 16 - PRINCIPIOS DE CUMPLIMIENTO PÚBLICO:
+El sujeto obligado debe regir el tratamiento de datos personales por los principios de Licitud, Finalidad, Lealtad, Consentimiento, Calidad, Proporcionalidad, Información y Responsabilidad. En el sector público, el tratamiento debe estar expresamente justificado por las atribuciones y facultades legales que la ley confiere al sujeto obligado.
+
+ARTÍCULO 22 - CONSENTIMIENTO PARA DATOS SENSIBLES EN EL SECTOR PÚBLICO:
+Tratándose de datos personales sensibles, el sujeto obligado deberá obtener el consentimiento expreso y por escrito del titular para su tratamiento, a través de firma autógrafa, firma electrónica o cualquier mecanismo de autenticación autorizado, salvo que se actualice alguna de las excepciones de ley (como seguridad nacional, salubridad pública o cumplimiento de obligaciones legales de la dependencia).
+
+ARTÍCULO 48 - DERECHOS ARCO EN EL ÁMBITO PÚBLICO:
+Los ciudadanos tienen el derecho de Acceso, Rectificación, Cancelación y Oposición ante cualquier institución gubernamental. El ejercicio de estos derechos es gratuito, y los plazos de respuesta no deben exceder los 20 días hábiles. La cancelación puede negarse si los datos son necesarios para el ejercicio de las facultades de la autoridad o para cumplir obligaciones legales del sujeto obligado.

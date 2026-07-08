@@ -1,0 +1,42 @@
+[LEY FEDERAL DE PROTECCIÓN DE DATOS PERSONALES EN POSESIÓN DE LOS PARTICULARES (LFPDPPP) - MÉXICO]
+
+ARTÍCULO 3 - DEFINICIONES CLAVE
+- Datos Personales Sensibles (Fracción VI): Aquellos datos personales que afecten a la esfera más íntima de su titular, o cuya utilización indebida pueda dar origen a discriminación o conlleve un riesgo grave para éste. En particular, se consideran sensibles aquellos que puedan revelar aspectos como origen racial o étnico, estado de salud presente y futuro, información genética, creencias religiosas, filosóficas y morales, afiliación sindical, opiniones políticas, preferencia sexual.
+- Derechos ARCO: Los derechos de Acceso, Rectificación, Cancelación y Oposición del titular.
+- Responsable: Persona física o moral de carácter privado que decide sobre el tratamiento de datos personales.
+
+ARTÍCULO 6 - PRINCIPIOS RECTORES del tratamiento de datos:
+El responsable deberá observar los principios de Licitud, Consentimiento, Información, Calidad, Finalidad, Lealtad, Proporcionalidad y Responsabilidad.
+
+ARTÍCULO 8 - CONSENTIMIENTO GENERAL:
+Todo tratamiento de datos personales estará sujeto al consentimiento de su titular, salvo excepciones de ley. El consentimiento puede ser tácito o expreso.
+
+ARTÍCULO 9 - CONSENTIMIENTO PARA DATOS SENSIBLES:
+Tratándose de datos personales sensibles, el responsable deberá obtener el consentimiento expreso y por escrito del titular para su tratamiento, a través de su firma autógrafa, firma electrónica, o cualquier mecanismo de autenticación. No podrán crearse bases de datos que contengan datos personales sensibles sin que se justifique la creación de las mismas para finalidades legítimas, concretas y acordes con las actividades o fines explícitos del sujeto regulado.
+
+ARTÍCULO 15 - OBLIGACIÓN DEL AVISO DE PRIVACIDAD:
+El responsable tendrá la obligación de informar a los titulares de los datos, la información que se recaba de ellos y con qué fines, a través del Aviso de Privacidad.
+
+ARTÍCULO 16 - CONTENIDO DEL AVISO DE PRIVACIDAD:
+El aviso de privacidad deberá contener, al menos:
+1. La identidad y domicilio del responsable que los recaba.
+2. Las finalidades del tratamiento de datos.
+3. Las opciones y medios que el responsable ofrezca a los titulares para limitar el uso o divulgación de los datos.
+4. Los medios para ejercer los derechos ARCO.
+5. Las transferencias de datos que se efectúen.
+6. El procedimiento por el cual el responsable comunicará cambios al aviso.
+
+ARTÍCULO 22 - DERECHOS ARCO:
+Cualquier titular tiene derecho a acceder a sus datos personales, a rectificarlos si son inexactos, a cancelarlos cuando considere que no son necesarios, o a oponerse a su tratamiento para fines específicos.
+
+ARTÍCULO 25 - DERECHO DE CANCELACIÓN (DERECHO AL OLVIDO):
+El titular tendrá en todo momento el derecho a cancelar sus datos personales. La cancelación dará lugar a un periodo de bloqueo tras el cual se procederá a la supresión del dato. El responsable podrá conservarlos exclusivamente para efectos de las responsabilidades nacidas de su tratamiento.
+
+ARTÍCULO 37 - TRANSFERENCIA DE DATOS SIN CONSENTIMIENTO:
+Las transferencias nacionales o internacionales de datos podrán llevarse a cabo sin el consentimiento del titular únicamente cuando:
+1. Esté prevista en una Ley o Tratado.
+2. Sea necesaria para prevención o diagnóstico médico.
+3. Se efectúe a sociedades controladoras o filiales bajo el mismo grupo del responsable.
+4. Sea necesaria por un contrato celebrado o por celebrar en interés del titular.
+5. Sea exigida para la salvaguarda de un interés público o procuración de justicia.
+6. Sea necesaria para el mantenimiento o cumplimiento de una relación jurídica entre el responsable y el titular.

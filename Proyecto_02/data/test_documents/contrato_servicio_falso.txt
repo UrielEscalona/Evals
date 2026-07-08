@@ -1,0 +1,25 @@
+CONTRATO DE PRESTACIÓN DE SERVICIOS DE ASISTENCIA MÉDICA
+
+Este Contrato de Prestación de Servicios (en adelante el "Contrato") es celebrado el 3 de junio de 2026 por y entre:
+
+1. El Prestador de Servicios: Servicios de Salud del Norte S.A. de C.V., con domicilio en Avenida Insurgentes Sur 1230, Ciudad de México.
+2. El Cliente (en adelante el "Titular"): Juan Pérez García, de nacionalidad mexicana, con domicilio en Calle Roble 45, Colonia Del Valle, Monterrey, Nuevo León, C.P. 64000, con CURP PEGJ850615HMNDRR09, RFC PEGJ8506159A3, teléfono 8112345678 y correo electrónico juan.perez@email.com.
+
+DECLARACIONES Y CLÁUSULAS:
+
+DECLARA EL TITULAR:
+Que padece de diabetes tipo 2 y requiere monitoreo diario de sus niveles de glucosa, así como almacenamiento de sus expedientes clínicos e historial de tratamientos en la plataforma digital del Prestador.
+
+CLÁUSULA PRIMERA. OBJETO.
+El Prestador recopilará diariamente los datos de salud del Titular, incluyendo niveles de glucosa, presión arterial e historial genético familiar, para proveer asesoría nutricional y médica automatizada.
+
+CLÁUSULA SEGUNDA. TRANSFERENCIA DE DATOS.
+El Titular acepta que el Prestador podrá transferir sus datos personales e historial de salud a laboratorios afiliados y aseguradoras comerciales nacionales y extranjeras, con el fin de cotizar pólizas de seguro de vida y salud, sin necesidad de requerir autorización por escrito para cada transferencia.
+
+CLÁUSULA TERCERA. VIGENCIA Y CANCELACIÓN.
+La vigencia de este contrato es indefinida. En caso de terminación, el Prestador conservará los expedientes clínicos y datos de salud en su base de datos por un periodo de 15 años para análisis de Big Data y optimización de modelos predictivos de la empresa, renunciando el Titular a solicitar su eliminación inmediata.
+
+Firmado por las partes:
+___________________________                 ___________________________
+Servicios de Salud del Norte                 Juan Pérez García
+(Prestador)                                  (Titular)

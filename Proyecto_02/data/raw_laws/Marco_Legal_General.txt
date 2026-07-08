@@ -1,0 +1,16 @@
+[MARCO LEGAL GENERAL Y DIRECTRICES DE PRIVACIDAD EN MÉXICO]
+
+CONSTITUCIÓN POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS - ARTÍCULO 16, PÁRRAFO SEGUNDO:
+Toda persona tiene derecho a la protección de sus datos personales, al acceso, rectificación y cancelación de los mismos, así como a manifestar su oposición, en los términos que fije la ley, la cual establecerá los supuestos de excepción a los principios que rijan el tratamiento de datos, por razones de seguridad nacional, disposiciones de orden público, seguridad y salud públicas o para proteger los derechos de terceros.
+
+INAI - LINEAMIENTOS DEL AVISO DE PRIVACIDAD:
+El Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales (INAI) establece tres tipos de Avisos de Privacidad:
+1. Aviso de Privacidad Integral: Se recomienda cuando los datos se recaban directamente en presencia física del titular. Debe contener toda la información detallada (finalidades secundarias, transferencias, etc.).
+2. Aviso de Privacidad Simplificado: Se presenta cuando los datos se obtienen de manera telefónica, internet o medios electrónicos. Es más conciso pero debe incluir enlace al aviso integral.
+3. Aviso de Privacidad Corto: Se utiliza cuando el espacio o medio de difusión es mínimo (por ejemplo, mensajes SMS, boletos físicos). Solo contiene identidad del responsable, datos recabados, finalidades y enlace al integral.
+
+MEDIDAS DE SEGURIDAD FÍSICAS, TÉCNICAS Y ADMINISTRATIVAS:
+Todo responsable que trate datos personales debe implementar y mantener medidas de seguridad:
+- Medidas Administrativas: Políticas de acceso, convenios de confidencialidad con empleados, capacitaciones sobre privacidad, roles y responsabilidades.
+- Medidas Físicas: Controles de acceso a archivos físicos, protección contra incendios, almacenamiento bajo llave.
+- Medidas Técnicas: Cifrado de datos personales en tránsito y almacenamiento, control de accesos lógicos (usuarios y contraseñas), uso de firewalls, antivirus y proxies de anonimización para evitar la exposición innecesaria de PII.
