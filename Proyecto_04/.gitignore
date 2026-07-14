@@ -1,0 +1,13 @@
+# Python cache y compilados
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Configuración local
+.env
+
+# Logs y cachés de pruebas
+*.log
+.pytest_cache/
+.coverage
+htmlcov/

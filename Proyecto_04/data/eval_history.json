@@ -1,0 +1,320 @@
+[
+  {
+    "timestamp": 1783995892.4948194,
+    "date": "2026-07-13 20:24:52",
+    "totals": {
+      "scenarios_count": 5,
+      "successful_runs": 5,
+      "completed_tasks": 5,
+      "correct_tools": 5,
+      "task_completion_rate": 100.0,
+      "tool_correctness_rate": 100.0,
+      "total_cost_usd": 0.09986599999999998,
+      "total_token_cost_usd": 0.068866,
+      "total_api_cost_usd": 0.031000000000000003,
+      "average_latency_sec": 27.51000123023987,
+      "total_tokens_in": 19184,
+      "total_tokens_out": 5083
+    },
+    "scenarios": [
+      {
+        "scenario_id": 1,
+        "name": "Búsqueda y Compra Multi-hop",
+        "success": true,
+        "final_answer": "He encontrado la laptop que mejor se ajusta a tus requerimientos: es la más económica de 16GB de RAM y tiene un envío garantizado en solo 1 día hábil para tu código postal (01000).\n\n**Detalles del producto:**\n*   **Producto:** MSI Modern 15\n*   **ID:** 107\n*   **RAM:** 16 GB\n*   **Precio:** $700.0 USD\n*   **Stock:** Disponible (6 unidades)\n*   **Envío Estimado:** 1 día hábil\n*   **Costo de Envío Express:** $25.0 USD\n\nEste modelo es ideal para productividad y cumple con el requisito de envío rápido que solicitaste, siendo la opción más económica entre las disponibles.",
+        "steps": [
+          {
+            "step": 1,
+            "thought": "El usuario quiere encontrar la laptop más barata con 16GB de RAM y un envío menor a dos días hábiles para el CP 01000. Primero, debo buscar todos los productos que cumplan con el requisito de memoria RAM (16GB).",
+            "action": "buscar_producto",
+            "arguments": {
+              "query": "laptop 16GB"
+            },
+            "raw_response": "Thought: El usuario quiere encontrar la laptop más barata con 16GB de RAM y un envío menor a dos días hábiles para el CP 01000. Primero, debo buscar todos los productos que cumplan con el requisito de memoria RAM (16GB).\nAction: buscar_producto(query=\"laptop 16GB\")",
+            "observation": "No se encontraron productos que coincidan con la búsqueda 'laptop 16GB'.",
+            "status": "success"
+          },
+          {
+            "step": 2,
+            "thought": "La búsqueda inicial por \"laptop 16GB\" falló, lo que indica que no hay resultados directos con esa descripción. Para poder avanzar, necesito obtener un catálogo general de laptops disponibles para luego filtrar o verificar manualmente cuáles cumplen con los requisitos de RAM (16GB) y el envío (<2 días). Intentaré buscar simplemente \"laptop\" para ver qué productos están en la tienda.",
+            "action": "buscar_producto",
+            "arguments": {
+              "query": "laptop"
+            },
+            "raw_response": "Thought: La búsqueda inicial por \"laptop 16GB\" falló, lo que indica que no hay resultados directos con esa descripción. Para poder avanzar, necesito obtener un catálogo general de laptops disponibles para luego filtrar o verificar manualmente cuáles cumplen con los requisitos de RAM (16GB) y el envío (<2 días). Intentaré buscar simplemente \"laptop\" para ver qué productos están en la tienda.\nAction: buscar_producto(query=\"laptop\")",
+            "observation": "[{'id': 101, 'brand': 'Dell', 'model': 'Inspiron 15', 'price': 550.0, 'ram_gb': 8, 'stock': 10, 'shipping_days': 3, 'description': 'Laptop de oficina confiable con procesador Intel i3 y 8GB de RAM.'}, {'id': 102, 'brand': 'Lenovo', 'model': 'ThinkPad E14', 'price': 850.0, 'ram_gb': 16, 'stock': 5, 'shipping_days': 1, 'description': 'Laptop empresarial robusta con procesador Ryzen 5, 16GB de RAM y teclado resistente a salpicaduras.'}, {'id': 103, 'brand': 'Asus', 'model': 'ZenBook 14', 'price': 950.0, 'ram_gb': 16, 'stock': 0, 'shipping_days': 1, 'description': 'Laptop ultraligera premium con pantalla OLED, 16GB de RAM y procesador Intel i7. Actualmente agotada.'}, {'id': 104, 'brand': 'HP', 'model': 'Pavilion 15', 'price': 750.0, 'ram_gb': 16, 'stock': 8, 'shipping_days': 4, 'description': 'Laptop versátil para estudiantes con 16GB de RAM, pantalla Full HD de 15.6 pulgadas y almacenamiento SSD de 512GB.'}, {'id': 105, 'brand': 'Apple', 'model': 'MacBook Air M2', 'price': 1100.0, 'ram_gb': 8, 'stock': 15, 'shipping_days': 1, 'description': 'Laptop ultra-delgada de Apple con chip M2, silenciosa y con gran duración de batería.'}, {'id': 106, 'brand': 'Acer', 'model': 'Aspire 5', 'price': 600.0, 'ram_gb': 16, 'stock': 3, 'shipping_days': 3, 'description': 'Laptop económica para multitarea con procesador Intel i5, 16GB de RAM y diseño compacto.'}, {'id': 107, 'brand': 'MSI', 'model': 'Modern 15', 'price': 700.0, 'ram_gb': 16, 'stock': 6, 'shipping_days': 1, 'description': 'Laptop ligera y potente ideal para productividad, equipada con procesador Intel i5, 16GB de RAM y envío super rápido.'}]",
+            "status": "success"
+          },
+          {
+            "step": 3,
+            "thought": "He filtrado los productos para encontrar aquellos con 16GB de RAM y que estén en stock. Los candidatos son ID 102, 104, 106 y 107. El usuario busca el más barato con envío menor a dos días hábiles (CP 01000). Empezaré verificando el tiempo de envío del producto más económico entre los viables: ID 106 ($600).",
+            "action": "calcular_envio",
+            "arguments": {
+              "product_id": 106,
+              "cp": "01000"
+            },
+            "raw_response": "Thought: He filtrado los productos para encontrar aquellos con 16GB de RAM y que estén en stock. Los candidatos son ID 102, 104, 106 y 107. El usuario busca el más barato con envío menor a dos días hábiles (CP 01000). Empezaré verificando el tiempo de envío del producto más económico entre los viables: ID 106 ($600).\nAction: calcular_envio(product_id=106, cp=\"01000\")",
+            "observation": "Envío Express para ID 106 al Código Postal 01000: Costo: $25.0 USD, Tiempo estimado: 3 días hábiles.",
+            "status": "success"
+          },
+          {
+            "step": 4,
+            "thought": "El producto con ID 106 ($600) tiene un envío de 3 días hábiles, lo cual excede el límite de dos días del usuario. Debo revisar los siguientes candidatos en orden de precio ascendente para ver si cumplen con el requisito de envío (<2 días).\n\nSiguientes candidatos a evaluar (RAM=16GB, Stock>0):\n1. ID 107 (MSI Modern 15): $700. Envío: 1 día. **(Candidato viable)**\n2. ID 104 (HP Pavilion 15): $750. Envío: 4 días. (Descartado)\n3. ID 102 (Lenovo ThinkPad E14): $850. Envío: 1 día. **(Candidato viable)**\n\nEl candidato más barato que cumple con el envío es el ID 107 ($700). Debo verificar su disponibilidad de stock y luego confirmar si el tiempo de envío es menor a dos días, aunque la descripción ya lo indica como \"envío super rápido\" (y mi cálculo anterior para otros productos ha sido preciso).\n\nVerificaré primero el stock del candidato más barato: ID 107.",
+            "action": "buscar_stock",
+            "arguments": {
+              "product_id": 107
+            },
+            "raw_response": "Thought: El producto con ID 106 ($600) tiene un envío de 3 días hábiles, lo cual excede el límite de dos días del usuario. Debo revisar los siguientes candidatos en orden de precio ascendente para ver si cumplen con el requisito de envío (<2 días).\n\nSiguientes candidatos a evaluar (RAM=16GB, Stock>0):\n1. ID 107 (MSI Modern 15): $700. Envío: 1 día. **(Candidato viable)**\n2. ID 104 (HP Pavilion 15): $750. Envío: 4 días. (Descartado)\n3. ID 102 (Lenovo ThinkPad E14): $850. Envío: 1 día. **(Candidato viable)**\n\nEl candidato más barato que cumple con el envío es el ID 107 ($700). Debo verificar su disponibilidad de stock y luego confirmar si el tiempo de envío es menor a dos días, aunque la descripción ya lo indica como \"envío super rápido\" (y mi cálculo anterior para otros productos ha sido preciso).\n\nVerificaré primero el stock del candidato más barato: ID 107.\nAction: buscar_stock(product_id=107)",
+            "observation": "El producto MSI Modern 15 (ID: 107) tiene 6 unidades disponibles en stock.",
+            "status": "success"
+          },
+          {
+            "step": 5,
+            "thought": "He confirmado que el candidato más barato y viable es la laptop con ID 107 ($700). Ya verifiqué su stock (disponible) y, al consultar los datos del producto, se indica un envío de 1 día hábil, lo cual cumple con el requisito (<2 días).\n\nAunque ya calculé el envío para otros productos, es buena práctica confirmar el costo y tiempo exacto para este último candidato.",
+            "action": "calcular_envio",
+            "arguments": {
+              "product_id": 107,
+              "cp": "01000"
+            },
+            "raw_response": "Thought: He confirmado que el candidato más barato y viable es la laptop con ID 107 ($700). Ya verifiqué su stock (disponible) y, al consultar los datos del producto, se indica un envío de 1 día hábil, lo cual cumple con el requisito (<2 días).\n\nAunque ya calculé el envío para otros productos, es buena práctica confirmar el costo y tiempo exacto para este último candidato.\nAction: calcular_envio(product_id=107, cp=\"01000\")",
+            "observation": "Envío Express para ID 107 al Código Postal 01000: Costo: $25.0 USD, Tiempo estimado: 1 días hábiles.",
+            "status": "success"
+          },
+          {
+            "step": 6,
+            "thought": "Analizando los datos...",
+            "action": "Final Answer",
+            "arguments": {},
+            "observation": "",
+            "raw_response": "Final Answer: He encontrado la laptop que mejor se ajusta a tus requerimientos: es la más económica de 16GB de RAM y tiene un envío garantizado en solo 1 día hábil para tu código postal (01000).\n\n**Detalles del producto:**\n*   **Producto:** MSI Modern 15\n*   **ID:** 107\n*   **RAM:** 16 GB\n*   **Precio:** $700.0 USD\n*   **Stock:** Disponible (6 unidades)\n*   **Envío Estimado:** 1 día hábil\n*   **Costo de Envío Express:** $25.0 USD\n\nEste modelo es ideal para productividad y cumple con el requisito de envío rápido que solicitaste, siendo la opción más económica entre las disponibles.",
+            "status": "completed"
+          }
+        ],
+        "metrics": {
+          "task_completed": true,
+          "tools_correct": true,
+          "tool_sequencing_ok": true,
+          "cost_usd": 0.047734,
+          "latency_sec": 98.46767258644104,
+          "steps_count": 6,
+          "token_cost": 0.032734,
+          "api_cost": 0.015000000000000003,
+          "tokens_in": 8993,
+          "tokens_out": 2458
+        },
+        "failures": []
+      },
+      {
+        "scenario_id": 2,
+        "name": "Consulta de Políticas (RAG)",
+        "success": true,
+        "final_answer": "Según nuestras políticas de devolución y reembolso, puedes devolver cualquier laptop dentro de los **30 días posteriores a la entrega**.\n\nPara que la devolución sea aceptada, el producto debe cumplir con las siguientes condiciones:\n*   Estar en su empaque original sin daños.\n*   Tener todos los accesorios incluidos.\n\n**En caso de arrepentimiento de compra:**\nSi decides devolverlo por arrepentimiento (y no por fallas de fábrica), deberás cubrir un costo fijo de devolución de **$15.0 USD**.\n\n**Proceso de reembolso:**\nUna vez que recibamos e inspeccionemos el producto en nuestro almacén, el reembolso se procesará en un plazo de **3 a 5 días hábiles** a la tarjeta o método de pago original.",
+        "steps": [
+          {
+            "step": 1,
+            "thought": "El usuario pregunta sobre las políticas de reembolsos y qué sucede si se arrepiente de la compra. La herramienta más adecuada para responder preguntas sobre políticas es `consultar_politicas`.",
+            "action": "consultar_politicas",
+            "arguments": {
+              "pregunta": "políticas de reembolso o devolución por arrepentimiento"
+            },
+            "raw_response": "Thought: El usuario pregunta sobre las políticas de reembolsos y qué sucede si se arrepiente de la compra. La herramienta más adecuada para responder preguntas sobre políticas es `consultar_politicas`.\nAction: consultar_politicas(pregunta=\"políticas de reembolso o devolución por arrepentimiento\")",
+            "observation": "1. POLÍTICA DE DEVOLUCIÓN Y REEMBOLSO:\n- Los clientes pueden devolver cualquier laptop dentro de los 30 días posteriores a la entrega.\n- El producto debe estar en su empaque original sin daños y con todos los accesorios incluidos.\n- La devolución es gratuita si el producto presenta fallas de fábrica. Si es por arrepentimiento de compra, el cliente cubre un costo fijo de devolución de $15.0 USD.\n- Una vez recibido e inspeccionado el producto en nuestro almacén, el reembolso se procesará en un plazo de 3 a 5 días hábiles a la tarjeta o método de pago original.\n\n---\n\nPOLÍTICAS DE LA TIENDA DE LAPTOPS (E-COMMERCE)",
+            "status": "success"
+          },
+          {
+            "step": 2,
+            "thought": "Analizando los datos...",
+            "action": "Final Answer",
+            "arguments": {},
+            "observation": "",
+            "raw_response": "Final Answer: Según nuestras políticas de devolución y reembolso, puedes devolver cualquier laptop dentro de los **30 días posteriores a la entrega**.\n\nPara que la devolución sea aceptada, el producto debe cumplir con las siguientes condiciones:\n*   Estar en su empaque original sin daños.\n*   Tener todos los accesorios incluidos.\n\n**En caso de arrepentimiento de compra:**\nSi decides devolverlo por arrepentimiento (y no por fallas de fábrica), deberás cubrir un costo fijo de devolución de **$15.0 USD**.\n\n**Proceso de reembolso:**\nUna vez que recibamos e inspeccionemos el producto en nuestro almacén, el reembolso se procesará en un plazo de **3 a 5 días hábiles** a la tarjeta o método de pago original.",
+            "status": "completed"
+          }
+        ],
+        "metrics": {
+          "task_completed": true,
+          "tools_correct": true,
+          "tool_sequencing_ok": true,
+          "cost_usd": 0.008487999999999999,
+          "latency_sec": 4.8932740688323975,
+          "steps_count": 2,
+          "token_cost": 0.005488,
+          "api_cost": 0.003,
+          "tokens_in": 1652,
+          "tokens_out": 364
+        },
+        "failures": []
+      },
+      {
+        "scenario_id": 3,
+        "name": "Cálculo de Cupón de Descuento",
+        "success": true,
+        "final_answer": "El costo total de la laptop Dell Inspiron 15 (ID 101) con el cupón DESCUENTO10 aplicado sería de **$495.0 USD**.\n\nAquí tienes el detalle del cálculo:\n*   **Precio original:** $550.0 USD\n*   **Descuento aplicado:** -$55.0 USD (equivalente al 10%)\n*   **Precio final a pagar:** $495.0 USD",
+        "steps": [
+          {
+            "step": 1,
+            "thought": "El usuario quiere calcular el precio final de un producto específico (ID 101) aplicando un cupón de descuento (\"DESCUENTO10\"). Usaré la herramienta `calcular_descuento` con estos parámetros.",
+            "action": "calcular_descuento",
+            "arguments": {
+              "product_id": 101,
+              "coupon": "DESCUENTO10"
+            },
+            "raw_response": "Thought: El usuario quiere calcular el precio final de un producto específico (ID 101) aplicando un cupón de descuento (\"DESCUENTO10\"). Usaré la herramienta `calcular_descuento` con estos parámetros.\nAction: calcular_descuento(product_id=101, coupon=\"DESCUENTO10\")",
+            "observation": "Error al ejecutar la herramienta: 1 validation error for calcular_descuento\ncoupon_code\n  Field required [type=missing, input_value={'product_id': 101, 'coupon': 'DESCUENTO10'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing",
+            "status": "error"
+          },
+          {
+            "step": 2,
+            "thought": "El intento anterior de usar `calcular_descuento` falló porque el código del cupón debe pasarse bajo la clave `coupon_code`. Reintentaré la acción usando el nombre de parámetro correcto.",
+            "action": "calcular_descuento",
+            "arguments": {
+              "product_id": 101,
+              "coupon_code": "DESCUENTO10"
+            },
+            "raw_response": "Thought: El intento anterior de usar `calcular_descuento` falló porque el código del cupón debe pasarse bajo la clave `coupon_code`. Reintentaré la acción usando el nombre de parámetro correcto.\nAction: calcular_descuento(product_id=101, coupon_code=\"DESCUENTO10\")",
+            "observation": "Cupón DESCUENTO10 aplicado con éxito.\nPrecio original: $550.0 USD\nDescuento aplicado: -$55.0 USD (10%)\nPrecio final: $495.0 USD",
+            "status": "success"
+          },
+          {
+            "step": 3,
+            "thought": "Analizando los datos...",
+            "action": "Final Answer",
+            "arguments": {},
+            "observation": "",
+            "raw_response": "Final Answer: El costo total de la laptop Dell Inspiron 15 (ID 101) con el cupón DESCUENTO10 aplicado sería de **$495.0 USD**.\n\nAquí tienes el detalle del cálculo:\n*   **Precio original:** $550.0 USD\n*   **Descuento aplicado:** -$55.0 USD (equivalente al 10%)\n*   **Precio final a pagar:** $495.0 USD",
+            "status": "completed"
+          }
+        ],
+        "metrics": {
+          "task_completed": true,
+          "tools_correct": true,
+          "tool_sequencing_ok": true,
+          "cost_usd": 0.011388,
+          "latency_sec": 8.895190954208374,
+          "steps_count": 3,
+          "token_cost": 0.009388,
+          "api_cost": 0.002,
+          "tokens_in": 2630,
+          "tokens_out": 688
+        },
+        "failures": []
+      },
+      {
+        "scenario_id": 4,
+        "name": "Resiliencia ante Fallo de API (Fallback)",
+        "success": true,
+        "final_answer": "He verificado la disponibilidad de la laptop Lenovo ThinkPad E14 (ID 102). Actualmente, hay **5 unidades disponibles** en stock.\n\nRespecto al envío al CP 01000, lamentablemente he encontrado un error técnico temporal con el proveedor de envíos y no pude calcular los costos ni tiempos exactos en este momento. Te pido disculpas por este inconveniente. Por favor, inténtalo más tarde o házmelo saber si tienes alguna otra consulta sobre el producto.",
+        "steps": [
+          {
+            "step": 1,
+            "thought": "El usuario quiere saber el stock y el costo de envío para la laptop con ID 102. Primero debo verificar la disponibilidad del producto usando `buscar_stock`.",
+            "action": "buscar_stock",
+            "arguments": {
+              "product_id": 102
+            },
+            "raw_response": "Thought: El usuario quiere saber el stock y el costo de envío para la laptop con ID 102. Primero debo verificar la disponibilidad del producto usando `buscar_stock`.\nAction: buscar_stock(product_id=102)",
+            "observation": "El producto Lenovo ThinkPad E14 (ID: 102) tiene 5 unidades disponibles en stock.",
+            "status": "success"
+          },
+          {
+            "step": 2,
+            "thought": "Ya confirmé que hay stock del producto con ID 102. Ahora debo calcular el costo y tiempo de envío para el código postal proporcionado (CP 01000).",
+            "action": "calcular_envio",
+            "arguments": {
+              "product_id": 102,
+              "cp": "01000"
+            },
+            "raw_response": "Thought: Ya confirmé que hay stock del producto con ID 102. Ahora debo calcular el costo y tiempo de envío para el código postal proporcionado (CP 01000).\nAction: calcular_envio(product_id=102, cp=\"01000\")",
+            "observation": "ERROR: No se pudo conectar con el proveedor de envíos. Detalles: 500 Internal Server Error: Shipping provider API is offline.",
+            "status": "success"
+          },
+          {
+            "step": 3,
+            "thought": "Analizando los datos...",
+            "action": "Final Answer",
+            "arguments": {},
+            "observation": "",
+            "raw_response": "Final Answer: He verificado la disponibilidad de la laptop Lenovo ThinkPad E14 (ID 102). Actualmente, hay **5 unidades disponibles** en stock.\n\nRespecto al envío al CP 01000, lamentablemente he encontrado un error técnico temporal con el proveedor de envíos y no pude calcular los costos ni tiempos exactos en este momento. Te pido disculpas por este inconveniente. Por favor, inténtalo más tarde o házmelo saber si tienes alguna otra consulta sobre el producto.",
+            "status": "completed"
+          }
+        ],
+        "metrics": {
+          "task_completed": true,
+          "tools_correct": true,
+          "tool_sequencing_ok": true,
+          "cost_usd": 0.01464,
+          "latency_sec": 13.078755855560303,
+          "steps_count": 3,
+          "token_cost": 0.00864,
+          "api_cost": 0.006,
+          "tokens_in": 2445,
+          "tokens_out": 625
+        },
+        "failures": []
+      },
+      {
+        "scenario_id": 5,
+        "name": "Manejo de Error de Lógica / Validación",
+        "success": true,
+        "final_answer": "Sí, tenemos stock de la laptop Apple que buscas. Se trata del **Apple MacBook Air M2** (ID 105). Actualmente hay **15 unidades disponibles** en inventario.\n\nEste modelo tiene las siguientes características:\n*   **Precio:** $1100.0\n*   **RAM:** 8 GB\n*   **Descripción:** Laptop ultra-delgada de Apple con chip M2, silenciosa y con gran duración de batería.\n*   **Tiempo estimado de envío:** 1 día hábil.\n\n¿Te gustaría saber más detalles sobre este modelo o calcular un envío a tu código postal?",
+        "steps": [
+          {
+            "step": 1,
+            "thought": "El usuario quiere saber si hay stock de una laptop Apple. Para esto, primero debo buscar el producto para obtener su ID y luego consultar el stock con ese ID. Usaré la herramienta `buscar_producto` buscando \"Apple\".",
+            "action": "buscar_producto",
+            "arguments": {
+              "query": "laptop Apple"
+            },
+            "raw_response": "Thought: El usuario quiere saber si hay stock de una laptop Apple. Para esto, primero debo buscar el producto para obtener su ID y luego consultar el stock con ese ID. Usaré la herramienta `buscar_producto` buscando \"Apple\".\nAction: buscar_producto(query=\"laptop Apple\")",
+            "observation": "No se encontraron productos que coincidan con la búsqueda 'laptop Apple'.",
+            "status": "success"
+          },
+          {
+            "step": 2,
+            "thought": "La búsqueda inicial por \"laptop Apple\" no arrojó resultados. Intentaré una búsqueda más general usando solo el nombre de la marca, \"Apple\", para ver si hay algún producto listado en el catálogo que pueda ser identificado como tal.",
+            "action": "buscar_producto",
+            "arguments": {
+              "query": "Apple"
+            },
+            "raw_response": "Thought: La búsqueda inicial por \"laptop Apple\" no arrojó resultados. Intentaré una búsqueda más general usando solo el nombre de la marca, \"Apple\", para ver si hay algún producto listado en el catálogo que pueda ser identificado como tal.\nAction: buscar_producto(query=\"Apple\")",
+            "observation": "[{'id': 105, 'brand': 'Apple', 'model': 'MacBook Air M2', 'price': 1100.0, 'ram_gb': 8, 'stock': 15, 'shipping_days': 1, 'description': 'Laptop ultra-delgada de Apple con chip M2, silenciosa y con gran duración de batería.'}]",
+            "status": "success"
+          },
+          {
+            "step": 3,
+            "thought": "Ya encontré el producto Apple MacBook Air M2 con ID 105 y la lista de productos indica que tiene stock. Para dar una respuesta precisa sobre la disponibilidad, usaré la herramienta `buscar_stock` con el ID obtenido (105).",
+            "action": "buscar_stock",
+            "arguments": {
+              "product_id": 105
+            },
+            "raw_response": "Thought: Ya encontré el producto Apple MacBook Air M2 con ID 105 y la lista de productos indica que tiene stock. Para dar una respuesta precisa sobre la disponibilidad, usaré la herramienta `buscar_stock` con el ID obtenido (105).\nAction: buscar_stock(product_id=105)",
+            "observation": "El producto Apple MacBook Air M2 (ID: 105) tiene 15 unidades disponibles en stock.",
+            "status": "success"
+          },
+          {
+            "step": 4,
+            "thought": "Analizando los datos...",
+            "action": "Final Answer",
+            "arguments": {},
+            "observation": "",
+            "raw_response": "Final Answer: Sí, tenemos stock de la laptop Apple que buscas. Se trata del **Apple MacBook Air M2** (ID 105). Actualmente hay **15 unidades disponibles** en inventario.\n\nEste modelo tiene las siguientes características:\n*   **Precio:** $1100.0\n*   **RAM:** 8 GB\n*   **Descripción:** Laptop ultra-delgada de Apple con chip M2, silenciosa y con gran duración de batería.\n*   **Tiempo estimado de envío:** 1 día hábil.\n\n¿Te gustaría saber más detalles sobre este modelo o calcular un envío a tu código postal?",
+            "status": "completed"
+          }
+        ],
+        "metrics": {
+          "task_completed": true,
+          "tools_correct": true,
+          "tool_sequencing_ok": true,
+          "cost_usd": 0.017616,
+          "latency_sec": 12.215112686157227,
+          "steps_count": 4,
+          "token_cost": 0.012615999999999999,
+          "api_cost": 0.005,
+          "tokens_in": 3464,
+          "tokens_out": 948
+        },
+        "failures": []
+      }
+    ]
+  }
+]

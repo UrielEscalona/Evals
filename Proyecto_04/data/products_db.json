@@ -1,0 +1,72 @@
+[
+  {
+    "id": 101,
+    "brand": "Dell",
+    "model": "Inspiron 15",
+    "price": 550.0,
+    "ram_gb": 8,
+    "stock": 10,
+    "shipping_days": 3,
+    "description": "Laptop de oficina confiable con procesador Intel i3 y 8GB de RAM."
+  },
+  {
+    "id": 102,
+    "brand": "Lenovo",
+    "model": "ThinkPad E14",
+    "price": 850.0,
+    "ram_gb": 16,
+    "stock": 5,
+    "shipping_days": 1,
+    "description": "Laptop empresarial robusta con procesador Ryzen 5, 16GB de RAM y teclado resistente a salpicaduras."
+  },
+  {
+    "id": 103,
+    "brand": "Asus",
+    "model": "ZenBook 14",
+    "price": 950.0,
+    "ram_gb": 16,
+    "stock": 0,
+    "shipping_days": 1,
+    "description": "Laptop ultraligera premium con pantalla OLED, 16GB de RAM y procesador Intel i7. Actualmente agotada."
+  },
+  {
+    "id": 104,
+    "brand": "HP",
+    "model": "Pavilion 15",
+    "price": 750.0,
+    "ram_gb": 16,
+    "stock": 8,
+    "shipping_days": 4,
+    "description": "Laptop versátil para estudiantes con 16GB de RAM, pantalla Full HD de 15.6 pulgadas y almacenamiento SSD de 512GB."
+  },
+  {
+    "id": 105,
+    "brand": "Apple",
+    "model": "MacBook Air M2",
+    "price": 1100.0,
+    "ram_gb": 8,
+    "stock": 15,
+    "shipping_days": 1,
+    "description": "Laptop ultra-delgada de Apple con chip M2, silenciosa y con gran duración de batería."
+  },
+  {
+    "id": 106,
+    "brand": "Acer",
+    "model": "Aspire 5",
+    "price": 600.0,
+    "ram_gb": 16,
+    "stock": 3,
+    "shipping_days": 3,
+    "description": "Laptop económica para multitarea con procesador Intel i5, 16GB de RAM y diseño compacto."
+  },
+  {
+    "id": 107,
+    "brand": "MSI",
+    "model": "Modern 15",
+    "price": 700.0,
+    "ram_gb": 16,
+    "stock": 6,
+    "shipping_days": 1,
+    "description": "Laptop ligera y potente ideal para productividad, equipada con procesador Intel i5, 16GB de RAM y envío super rápido."
+  }
+]

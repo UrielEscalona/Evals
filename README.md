@@ -24,6 +24,11 @@ Este repositorio contiene una colección de proyectos prácticos de Inteligencia
 * **Características**: Simulador interactivo de alucinaciones y desviaciones RAG, evaluación de métricas principales (Faithfulness, Answer Relevancy, Contextual Relevancy), sintetizador de datos de prueba (Goldens) exportable a CSV y Cheat Sheet de pytest integrada.
 * **Carpeta**: [Proyecto_03/](file:///Proyecto_03)
 
+### 5. [Proyecto 04: Agente de Gestión de Pedidos & Suite de Evaluaciones (Evals)](file:///Proyecto_04/README.md)
+* **Descripción**: Sistema agentic de e-commerce especializado en la venta y recomendación de laptops, estructurado con la arquitectura Planner + Executor (flujo ReAct con LangChain y Ollama), que incorpora un simulador de costos financieros de API.
+* **Características**: Flujo ReAct con memoria de contexto estructurada, validación del uso de herramientas multi-paso, tolerancia a fallos/fallback, y evaluación de métricas de rendimiento (Task Completion Rate, Tool Correctness Accuracy) con visualización de costos financieros y latencias en un dashboard interactivo de Streamlit.
+* **Carpeta**: [Proyecto_04/](file:///Proyecto_04)
+
 ---
 
 ## 🛠️ Requisitos Generales
